@@ -1,7 +1,29 @@
+server:
+  port: 8081
 spring:
   security:
     oauth2:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8080/realms/mtmanh
-          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/cert
+          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+      client:
+        registration:
+          keycloak:
+            client-id: mtmanh
+            client-secret: 463qgJTpuRvFJUBosAzijIkjAn4HYFc3
+            authorization-grant-type: authorization_code
+            scope: openid,profile,email
+            redirect-uri: http://localhost:8081/login/oauth2/code/keycloak
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:8080/realms/mtmanh
+            user-name-attribute: preferred_username
+
+keycloak:
+  auth-server-url: http://localhost:8080
+  realm: mtmanh
+  client-id: mtmanh
+  client-secret: 463qgJTpuRvFJUBosAzijIkjAn4HYFc3
+  admin-username: admin
+  admin-password: admin
