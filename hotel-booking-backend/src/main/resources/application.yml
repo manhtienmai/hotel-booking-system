@@ -19,6 +19,19 @@ spring:
           keycloak:
             issuer-uri: http://localhost:8080/realms/mtmanh
             user-name-attribute: preferred_username
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hotel_booking
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 keycloak:
   auth-server-url: http://localhost:8080

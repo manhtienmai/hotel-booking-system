@@ -62,7 +62,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/HotelBookingService",
+    "last_opened_file_path": "E:/HotelBookingService/hotel-booking-backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1739954804446</updated>
       <workItem from="1739954805646" duration="11874000" />
-      <workItem from="1740129131052" duration="1701000" />
+      <workItem from="1740129131052" duration="7352000" />
     </task>
     <servers />
   </component>

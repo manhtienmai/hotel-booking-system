@@ -1,4 +1,4 @@
-//package com.mtmanh.HotelBookingService;
+//package com.mtmanh.propertyBookingService;
 //
 //import lombok.RequiredArgsConstructor;
 //import org.springframework.web.bind.annotation.RequestMapping;

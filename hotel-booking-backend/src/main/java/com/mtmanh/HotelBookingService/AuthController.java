@@ -78,15 +78,15 @@ public class AuthController {
 //        }
 //    }
 //
-//    @PostMapping("/logout")
-//    public ResponseEntity<?> logout(HttpServletRequest request) {
-//        try {
-//            String token = tokenService.extractToken(request);
-//            keycloakService.logout(token);
-//            return ResponseEntity.ok(new ApiResponse(true, "Logged out successfully"));
-//        } catch (Exception e) {
-//            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-//                    .body(new ApiResponse(false, "Error during logout"));
-//        }
-//    }
+    @PostMapping("/logout")
+    public ResponseEntity<?> logout(HttpServletRequest request) {
+        try {
+            String token = tokenService.extractToken(request);
+            keycloakService.logout(token);
+            return ResponseEntity.ok(new ApiResponse(true, "Logged out successfully"));
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(new ApiResponse(false, "Error during logout"));
+        }
+    }
 }
