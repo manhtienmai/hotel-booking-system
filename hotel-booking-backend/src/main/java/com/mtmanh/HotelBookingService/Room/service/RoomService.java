@@ -1,13 +1,13 @@
-package com.mtmanh.HotelBookingService.Room.service;
+package com.mtmanh.HotelBookingService.room.service;
 
-import com.mtmanh.HotelBookingService.Room.Room;
-import com.mtmanh.HotelBookingService.Room.dto.request.CreateRoomRequest;
-import com.mtmanh.HotelBookingService.Room.dto.response.RoomResponse;
-import com.mtmanh.HotelBookingService.Room.repository.RoomRepository;
+import com.mtmanh.HotelBookingService.room.domain.model.Room;
+import com.mtmanh.HotelBookingService.room.application.dto.request.CreateRoomRequest;
+import com.mtmanh.HotelBookingService.room.application.dto.response.RoomResponse;
+import com.mtmanh.HotelBookingService.room.domain.repository.RoomRepository;
 import com.mtmanh.HotelBookingService.exception.ResourceNotFoundException;
-import com.mtmanh.HotelBookingService.mapper.RoomMapper;
-import com.mtmanh.HotelBookingService.property.entity.Property;
-import com.mtmanh.HotelBookingService.property.repository.PropertyRepository;
+import com.mtmanh.HotelBookingService.room.application.mapper.RoomMapper;
+import com.mtmanh.HotelBookingService.property.domain.model.Property;
+import com.mtmanh.HotelBookingService.property.domain.repository.PropertyRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

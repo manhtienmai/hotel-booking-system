@@ -1,7 +1,9 @@
 package com.mtmanh.HotelBookingService.booking;
 
-import com.mtmanh.HotelBookingService.Room.*;
-import com.mtmanh.HotelBookingService.Room.repository.RoomRepository;
+import com.mtmanh.HotelBookingService.booking.domain.repository.RoomAvailabilityRepository;
+import com.mtmanh.HotelBookingService.booking.domain.repository.RoomInventoryRepository;
+import com.mtmanh.HotelBookingService.room.domain.model.*;
+import com.mtmanh.HotelBookingService.room.domain.repository.RoomRepository;
 import com.mtmanh.HotelBookingService.exception.ResourceNotFoundException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
